@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block page_content %}
+<link href="{% static styles %}" rel="stylesheet">
+
+<main role="main" class="inner cover">
+    <h1 class="cover-heading">Jeap Edits</h1>
+
+    <div class="content-container">
+        <p class="lead" style="font-size: 22px;">
+            En esta página encontrarás toda la información relacionada a mi edición de video.
+        </p>
+
+        <p class="lead" style="font-size: 22px;">
+            Contenido editado a Youtubers, términos y condiciones, mi biografía y los planes de trabajo que manejo.
+        </p>
+        <br>
+        <br>
+        <p class="lead" style="font-size: 20px; font-weight: bold;">
+            Recuerda ponerte en contacto conmigo si tienes alguna duda.
+        </p>
+        <br>
+        <p class="lead">
+            <a href="#" class="btn btn-lg btn-transparent">Ver más</a>
+        </p>
+    </div>
+
+</main>
+{% endblock %}
