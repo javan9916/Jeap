@@ -13,6 +13,22 @@ def home(request):
 
 def projects(request):
     context = {
-        
+        'project_page': 'active',
+        'styles': style
     }
     return render(request, 'projects.html', context)
+    
+def plans(request):
+    context = {
+        'plan_page': 'active',
+        'styles': style
+    }
+    return render(request, 'plans.html', context)
+        
+def about(request):
+    context = {
+        'about_page': 'active',
+        'styles': style
+    }
+    return render(request, 'about.html', context)
+    

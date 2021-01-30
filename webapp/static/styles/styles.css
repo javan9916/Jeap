@@ -119,7 +119,11 @@
     color: white;
   }
   
-  
+  .sample {
+    font-size: 60px;
+    font-family: 'Lobster Two', cursive;
+  }
+
 /* Footer */
 .mastfoot {
   color: rgba(255, 255, 255, 0.740);

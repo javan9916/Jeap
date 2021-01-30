@@ -42,11 +42,11 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="masthead mb-auto">
             <div class="inner">
-                <a href="#" class="masthead-brand">Jeap</a>
+                <a href="{% url 'home' %}" class="masthead-brand">Jeap</a>
                 <nav class="nav nav-masthead justify-content-center">
-                    <a class="nav-link" href="#">Proyectos</a>
-                    <a class="nav-link" href="#">Planes</a>
-                    <a class="nav-link" href="#">Sobre mí</a>
+                    <a class="nav-link {{ project_page }}" href="{% url 'projects' %}">Proyectos</a>
+                    <a class="nav-link {{ plan_page }}" href="{% url 'plans' %}">Planes</a>
+                    <a class="nav-link {{ about_page }}" href="{% url 'about' %}">Sobre mí</a>
                 </nav>
             </div>
         </header>
@@ -65,7 +65,7 @@
                         <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                     </svg>
                 </a>
-                <a class="centered" href="#" target="_blank" style="margin: 10px;">
+                <a class="centered" href="{% url 'about' %}" style="margin: 10px;">
                     <title>Email</title>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
                         stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
