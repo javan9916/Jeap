@@ -1,10 +1,11 @@
 {% extends "base.html" %}
-
 {% load static %}
 
-{% block page_content %}
+{% block extrahead %}
 <link href="{% static styles %}" rel="stylesheet">
+{% endblock %}
 
+{% block page_content %}
 <main role="main" class="inner cover">
     <h1 class="cover-heading">Jeap Edits</h1>
 
@@ -26,6 +27,5 @@
             <a href="#" class="btn btn-lg btn-transparent">Ver más</a>
         </p>
     </div>
-
 </main>
 {% endblock %}

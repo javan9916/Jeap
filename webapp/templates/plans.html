@@ -1,9 +1,12 @@
 {% extends "base.html" %}
-
 {% load static %}
 
-{% block page_content %}
+{% block extrahead %}
 <link href="{% static styles %}" rel="stylesheet">
+{% endblock %}
 
-<p class="sample">Planes</p>
+{% block page_content %}
+<div class="content">
+    <p class="sample">Planes</p>
+</div>
 {% endblock %}
