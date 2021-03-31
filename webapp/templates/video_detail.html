@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% load embed_video_tags %}
+
+{% block extrahead %}
+<link href="{% static styles %}" rel="stylesheet">
+{% endblock %}
+
+{% block page_content %}
+<div class="content">
+    <div class="card">
+        {% video video_item.video as my_video %}
+        {% video my_video "1100x720" %}
+        {% endvideo %}
+        <div class="card-body">
+            <h5 class="card-title">{{ video_item.title }}</h5>
+        </div>
+    </div>
+</div>
+{% endblock %}

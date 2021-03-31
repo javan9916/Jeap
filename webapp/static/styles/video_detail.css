@@ -1,0 +1,14 @@
+.content {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}

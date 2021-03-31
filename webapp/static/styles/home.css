@@ -1,15 +1,12 @@
-.page-content-container {
-  width: 100%;
-  text-align: center;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+body {
+  color: white;
 }
 
 .cover {
+  margin-top: 5%;
   padding: 0 1.5rem;
-  width: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .cover .btn-lg {
